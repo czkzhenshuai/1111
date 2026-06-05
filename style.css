@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.player-score,
+.computer-score {
+    flex: 1;
+    color: #fff;
+}
+
+.player-score p,
+.computer-score p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.player-score p:last-child,
+.computer-score p:last-child {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+.divider {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+#pongCanvas {
+    background: #1a1a2e;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    display: block;
+    margin: 30px auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    cursor: none;
+}
+
+.instructions {
+    color: #fff;
+    margin-top: 30px;
+    font-size: 0.95em;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #ffeb3b;
+}
+
+.instructions p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.instructions p:first-child {
+    font-weight: bold;
+    color: #ffeb3b;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    #pongCanvas {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .score-board {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .instructions {
+        font-size: 0.85em;
+        padding: 15px;
+    }
+}
